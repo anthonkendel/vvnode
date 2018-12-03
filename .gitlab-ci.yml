@@ -1,0 +1,14 @@
+before_script:
+  - npm install
+
+lint:
+  image: node:8.12-alpine
+  stage: test
+  script:
+    - npm run lint
+
+unit test:
+  image: node:8.12-alpine
+  stage: test
+  script:
+    - npm run test:unit
